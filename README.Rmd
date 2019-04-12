@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# rayleigh
+
+The goal of rayleigh is to generate Rayleigh isotope curves.
+
+## Installation
+
+You can install the released version of rayleigh from [GitHub](https://github.com/biogeochem/rayleigh) with:
+
+``` r
+devtools::install_github("biogeochem/rayleigh")
+```
+
+## Example
+
+This is a basic example where the initial δ value is -20‰ and the ε is -15‰:
+
+```{r example}
+calc_rayleigh(-20, -15)
+```
+
+The resulting `data.frame` can be plotted:
+
+```{r plot1}
+plot_rayleigh(calc_rayleigh(-20, -15))
+```
+
+Note that the `plot_rayleigh` function returns a `ggplot` object so it is easy to modify:
+
+```{r plot2}
+x <- plot_rayleigh(calc_rayleigh(-20, -15))
+x + theme_bw()
+```
