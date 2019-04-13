@@ -13,7 +13,7 @@ plot_rayleigh(df)
 Plot the Rayleigh Isotope Curve
 }
 \details{
-This function takes a simple data.frame and plots
+This function takes a simple data.frame, gathers it and plots
 the delta values of the residual material along a Rayleigh
 curve and returns a ggplot object.
 }

@@ -29,6 +29,7 @@ devtools::install_github("biogeochem/rayleigh")
 This is a basic example where the initial δ value is -20‰ and the ε is -15‰:
 
 ```{r example}
+library(rayleigh)
 calc_rayleigh(-20, -15)
 ```
 

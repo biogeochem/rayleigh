@@ -1,7 +1,7 @@
 Package: rayleigh
 Type: Package
 Title: Calculates and Plots isotope Rayleigh Curves
-Version: 0.1.0
+Version: 0.1.1
 Author: Jason Venkiteswaran
 Maintainer: Jason Venkiteswaran <jvenkiteswaran@wlu.ca>
 Description: More about what it does (maybe more than one line)
@@ -10,5 +10,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:
-    ggplot2
+    ggplot2,
+    dplyr,
+    magrittr,
+    tidyr
 RoxygenNote: 6.1.1
