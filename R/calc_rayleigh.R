@@ -7,7 +7,7 @@
 #' @param epsilon The isotope enrichement factor
 
 calc_rayleigh <- function(delta_initial, epsilon) {
-  fraction_remaining <- seq(0.1, 1 , 0.05)
+  fraction_remaining <- seq(0.1, 1 , 0.01)
   delta <- delta_initial + epsilon * log(fraction_remaining)
   data.frame(fraction_remaining, delta)
 }
