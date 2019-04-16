@@ -4,14 +4,23 @@
 \alias{calc_rayleigh}
 \title{Calculate the Rayleigh Isotope Curve}
 \usage{
-calc_rayleigh(delta_initial, epsilon)
+calc_rayleigh(delta_initial, epsilon, element = NULL)
 }
 \arguments{
 \item{delta_initial}{The initial delta value}
 
 \item{epsilon}{The isotope enrichement factor}
+
+\item{element}{(optional) The element system, C, N, or O}
+}
+\value{
+data.frame of results
 }
 \description{
 This function calculates the delta values of the residual material
 along a Rayleigh curve and returns a data.frame of results.
+}
+\examples{
+calc_rayleigh(-20, -15)
+calc_rayleigh(-20, -15, "C")
 }
