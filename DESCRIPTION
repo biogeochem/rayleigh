@@ -1,7 +1,7 @@
 Package: rayleigh
 Type: Package
 Title: Calculates and Plots isotope Rayleigh Curves
-Version: 0.1.2
+Version: 0.1.3
 Author: Jason Venkiteswaran
 Maintainer: Jason Venkiteswaran <jvenkiteswaran@wlu.ca>
 Description: More about what it does (maybe more than one line)
