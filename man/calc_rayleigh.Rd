@@ -11,7 +11,7 @@ calc_rayleigh(delta_initial, epsilon, element = NULL)
 
 \item{epsilon}{The isotope enrichement factor}
 
-\item{element}{(optional) The element system, C, N, or O}
+\item{element}{(optional) The element system, C, Hsmow, N, or Osmow}
 }
 \value{
 data.frame of results

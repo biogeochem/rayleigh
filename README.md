@@ -1,23 +1,23 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-rayleigh
-========
+
+# rayleigh <img src="man/figures/logo.png" align="right" />
 
 The goal of rayleigh is to generate Rayleigh isotope curves.
 
-Installation
-------------
+## Installation
 
-You can install the released version of rayleigh from [GitHub](https://github.com/biogeochem/rayleigh) with:
+You can install the released version of rayleigh from
+[GitHub](https://github.com/biogeochem/rayleigh) with:
 
 ``` r
 devtools::install_github("biogeochem/rayleigh")
 ```
 
-Example
--------
+## Example
 
-This is a basic example where the initial δ value is -20‰ and the ε is -15‰:
+This is a basic example where the initial δ value is -20‰ and the ε is
+-15‰:
 
 ``` r
 library(rayleigh)
@@ -124,11 +124,12 @@ plot_rayleigh(calc_rayleigh(-20, -15))
 
 <img src="man/figures/README-plot1-1.png" width="100%" />
 
-Note that the `plot_rayleigh` function returns a `ggplot` object so it is easy to modify:
+Note that the `plot_rayleigh` function returns a `ggplot` object so it
+is easy to modify:
 
 ``` r
 x <- plot_rayleigh(calc_rayleigh(-20, -15))
-x + theme_bw()
+x + ggplot2::theme_bw()
 ```
 
 <img src="man/figures/README-plot2-1.png" width="100%" />

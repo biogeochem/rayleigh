@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-# rayleigh
+# rayleigh <img src="man/figures/logo.png" align="right" />
 
 The goal of rayleigh is to generate Rayleigh isotope curves.
 
@@ -43,5 +43,5 @@ Note that the `plot_rayleigh` function returns a `ggplot` object so it is easy t
 
 ```{r plot2}
 x <- plot_rayleigh(calc_rayleigh(-20, -15))
-x + theme_bw()
+x + ggplot2::theme_bw()
 ```
